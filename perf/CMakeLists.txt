@@ -9,7 +9,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(perf-tools)
 
-add_library(perf perflib/perfhelper.c perflib/perfsslhelper.c perflib/threads.c perflib/time.c)
+add_library(perf perflib/perfhelper.c perflib/perfsslhelper.c perflib/threads.c perflib/time.c perflib/getopt.c)
 
 include_directories(PUBLIC $ENV{TARGET_OSSL_INCLUDE_PATH} . )
 

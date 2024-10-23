@@ -33,6 +33,13 @@ On Debian, you can use the following command to install the required packages:
 
     sudo apt install libmodule-install-perl libclass-method-modifiers-perl libmoo-perl liburi-encode-perl
 
+non-linuc variant (OpenBSD):
+    pkg_add p5-Moo p5-URL-Encode p5-Class-Method-Modifiers p5-Module-Install p5-Test-Requires p5-Test-Deep \
+	p5-LWP-Protocol-https p5-URI p5-local-lib
+
+    do installation for local user to keep things tidy
+	perl -Mlocal::lib Makefile.PL
+
 Installation
 ------------
 

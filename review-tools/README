@@ -184,3 +184,13 @@ you need to create all branches locally first:
 	for i in openssl-3.4 openssl-3.3 openssl-3.2 openssl-3.1 openssl-3.0 ; do
 		git checkout -b $i origin/$i
 	done
+
+
+
+When push fails due to missing CLA
+(remote: ERROR: not trivial and author is not a CLA holder: d05c5e1585dca3619df02a04dc219714b40d7def mls@suse.de)
+
+poke to jenkins job (VPN needed)
+    https://jenkins.int.openssl.org/job/generate-review-check-tables/
+you also need to sign-on to create/run pipe-line. The generate-review-check-tables
+jon syncs CLA-db with master copy.
